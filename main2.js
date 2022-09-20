@@ -52,6 +52,8 @@ var eventAggregator = (function () {
   };
 })();
 
+console.log(eventAggregator);
+
 function Cart() {
   var items = [];
 
@@ -75,6 +77,8 @@ var cartController = (function (cart) {
     cart.addItem(eventArgs.product);
   });
 })(new Cart());
+
+console.log(cartController);
 
 function Product(id, description) {
   this.getId = function () {
@@ -110,3 +114,5 @@ var productView = (function () {
       .appendTo('#products');
   });
 })();
+
+console.log(productView);
